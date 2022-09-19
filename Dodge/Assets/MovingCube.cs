@@ -26,7 +26,7 @@ public class MovingCube : MonoBehaviour
         float xspeed = x * speed;
         float yspeed = y * speed;
 
-        Vector3 Velo = new Vector3(xspeed, cube.velocity.y, yspeed);
+        Vector3 Velo = new Vector3(xspeed, 0f, yspeed);
         cube.velocity = Velo;
 
     }
