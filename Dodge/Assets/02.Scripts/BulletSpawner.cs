@@ -38,6 +38,7 @@ public class BulletSpawner : MonoBehaviour
             GameObject bullet = Instantiate(bulletprefab, transform.position, transform.rotation);
             //생성된 bullet 게임 오브젝트의 정면 방향이 target을 향하도록 회전
             bullet.transform.LookAt(target);
+            bullet.transform.rotation = Quaternion.Euler(0, 90, 0);
             //다음번 생성 간격을 spawnRateMin, spawnRateMax 사이에서 랜덤 지정
             spawnRate = Random.Range(spawnRateMin, spawnRateMax);
         }
